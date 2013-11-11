@@ -1,0 +1,9 @@
+echo '------------------------------------------------------------'
+echo '--------------------开始搭建git环境-------------------------'
+sudo apt-get install git-core git-flow bash-completion
+curl -s https://raw.github.com/bobthecow/git-flow-completion/master/git-flow-completion.bash > ~/.git-flow-completion.sh
+echo 'source ~/.git-flow-completion.sh' >> ~/.bashrc
+source ~/.bashrc
+echo '--------------------完成搭建git环境-------------------------'
+echo '--------------------环境搭建完成----------------------------'
+echo '------------------------------------------------------------'

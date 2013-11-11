@@ -1,0 +1,10 @@
+echo '------------------------------------------------------------'
+echo '--------------------安装系统需要的包------------------------'
+sudo apt-get install -y build-essential openssl curl libcurl3-dev libreadline6 libreadline6-dev git zlib1g zlib1g-dev libssl-dev libyaml-dev libxml2-dev libxslt-dev autoconf automake libtool imagemagick libmagickwand-dev libpcre3-dev libsqlite3-dev
+echo '------------------系统需要的包安装完成----------------------'
+echo '------------------------------------------------------------'
+echo '-----------------------安装RVM------------------------------'
+curl -L get.rvm.io | bash -s stable
+echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.' >> ~/.bashrc
+source ~/.bashrc
+echo '---------------------RVM安装完成----------------------------'
